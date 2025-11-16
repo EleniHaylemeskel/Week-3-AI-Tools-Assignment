@@ -1,0 +1,44 @@
+Part 1: Theoretical Understanding 
+1. Short Answer Questions
+
+Q1: Explain the primary differences between TensorFlow and PyTorch. When would you choose one over the other?
+
+    PyTorch and TensorFlow primarily differ in their computation graphs (dynamic vs. static), flexibility, and production readiness.
+        - PyTorch uses dynamic graphs (define-by-run), is favored for research and rapid prototyping due to its intuitive, "Pythonic" feel and native debugging support.
+        - TensorFlow uses static graphs (define-and-run, though it has dynamic options), excels in large-scale production deployment to diverse platforms (mobile, web), and offers a robust, all-in-one ecosystem for the full machine learning lifecycle.
+
+
+Q2: Describe two use cases for Jupyter Notebooks in AI development.
+
+    Jupyter Notebooks support AI development primarily through two key use cases:
+      
+        - Exploratory Data Analysis (EDA) and Visualization: They provide an interactive environment for data cleaning, transformation, and immediate visualization of data insights using libraries like Matplotlib and Seaborn. 
+          This iterative approach helps in understanding the dataset before modeling.
+      
+        - Rapid Prototyping and Model Development: The cell-by-cell execution facilitates quick experimentation with different machine learning algorithms and hyperparameter tuning. 
+          This "scratchpad" environment accelerates the iterative process of building and testing model variations efficiently.
+
+Q3: How does spaCy enhance NLP tasks compared to basic Python string operations?
+
+    spaCy enhances NLP by providing a fast, "linguistically aware" pipeline that replaces rudimentary string operations with sophisticated features like tokenization, 
+    part-of-speech tagging, and named entity recognition (NER), enabling deep text understanding efficiently.
+
+
+
+2. Comparative Analysis
+
+    Compare Scikit-learn and TensorFlow in terms of:
+
+        Target applications (e.g., classical ML vs. deep learning).
+        Ease of use for beginners.
+        Community support.
+
+    Scikit-learn:
+        Target Applications: Primarily for classical machine learning tasks (regression, clustering, classification) using structured, tabular data.
+        Ease of Use: Highly beginner-friendly with a simple, consistent API that abstracts complexity.
+        Community Support: Strong academic and general ML community known for excellent documentation.
+    TensorFlow:
+        Target Applications: Built for deep learning and complex neural networks, handling unstructured data like images and large text volumes.
+        Ease of Use: Has a steeper learning curve, involving concepts like tensors and computational graphs, though Keras simplifies much of it.
+        Community Support: Massive industry-focused and enterprise community, driven largely by Google, offering extensive deployment tools.
+

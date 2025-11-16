@@ -1,0 +1,11 @@
+Part 3: Ethics & Optimization (10%)
+1. Ethical Considerations
+
+Identify potential biases in your MNIST or Amazon Reviews model. 
+ How could tools like TensorFlow Fairness Indicators or spaCy’s rule-based systems mitigate these biases?
+
+    MNIST may seem simple, but the model can still develop biases. It often performs better on easy digits (like 0 or 1) and worse on difficult or messy ones (like 5 or 9), creating class imbalance bias. 
+    The dataset also reflects mostly Western handwriting styles, so the model may perform poorly on handwriting from other regions — a form of demographic/style bias. Because MNIST images are clean and centered, the model may also struggle with real-world handwriting, showing domain shift bias.
+
+    Tools like TensorFlow Fairness Indicators help detect and reduce these biases by breaking down accuracy and error rates for each digit class and identifying which groups perform worst. 
+    This guides targeted fixes like data augmentation or model retraining. Meanwhile, rule-based systems (such as those used in spaCy) offer structured corrections that can override or adjust low-confidence or systematically incorrect predictions, helping reduce unfair errors.
